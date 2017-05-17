@@ -6,7 +6,7 @@ We can consider an image as vector, which dimensionality equal to number of pixe
 
 Another case - we truncate our basis (simply throwing elements of basis - basis vectors). In straightforward case ((1,0,0), ...) we simply will throw pixels, but what will happen in more fitted basis case? In this sketch I tried to cover this questions.
 
-I consider human face images. To form eigen basis I use this database http://vis-www.cs.umass.edu/lfw/. **dataPrepere.py** helps to form **referenceImages.dat** which consist of face images as columns in one matrix. Main file is  **simple_random_eigen_basis.py**.  File **inputImage.dat** consists of examine image separated from the database. 
+I consider human face images. To form eigen basis I use this database http://vis-www.cs.umass.edu/lfw/. **dataPrepere.py** helps to form **referenceImages.dat** which consist of face images as columns in one matrix (you can grab **referenceImages.dat** here https://goo.gl/2nzNEq). Main file is  **simple_random_eigen_basis.py**.  File **inputImage.dat** consists of examine image separated from the database. 
 
 Then we use simple straightforward basis where only one element equal to 1 and other to 0. Expectedly reconstruction from such image projection gives us the same image.
 ![figure_1](https://cloud.githubusercontent.com/assets/19648595/25664016/5ecdfb6c-302a-11e7-85ef-cfbac1f33ae2.png)
